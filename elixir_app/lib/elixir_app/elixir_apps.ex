@@ -1,4 +1,11 @@
 defmodule ElixirApp.Filereader do
+  @doc """
+  ElixirApp
+
+  ## Examples
+      iex> ElixirApp.Filereader.get_file("priv/sampletext.txt")
+      "Two"
+  """
   
   def get_file(path) do
         File.read!(path)

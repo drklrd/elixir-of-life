@@ -3,6 +3,7 @@ defmodule FileReaderTest do
 	import ElixirApp.Filereader
 	import Mock
 
+	doctest ElixirApp.Filereader
 	test "Passing a file should return a string" do
 		str =
 		get_file(Path.join("#{:code.priv_dir(:elixir_app)}","sampletext.txt"))
