@@ -15,7 +15,7 @@ defmodule ElixirApp.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
-    [extra_applications: [:logger,:quantum],
+    [extra_applications: [:logger,:quantum, :extwitter],
      mod: {ElixirApp.Application, []}]
   end
 
@@ -29,6 +29,9 @@ defmodule ElixirApp.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:quantum, "~> 1.9"}]
+    [
+      {:quantum, "~> 1.9"},
+      {:extwitter, "~> 0.8.3"},
+      {:oauth, github: "tim/erlang-oauth"}]
   end
 end
