@@ -32,6 +32,7 @@ defmodule ElixirApp.Mixfile do
     [
       {:quantum, "~> 1.9"},
       {:extwitter, "~> 0.8.3"},
-      {:oauth, github: "tim/erlang-oauth"}]
+      {:oauth, github: "tim/erlang-oauth"},
+      {:mock, "~> 0.2.1"}]
   end
 end
